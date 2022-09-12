@@ -29,6 +29,7 @@
         "ralphjsmit/laravel-filament-components": "^1.1",
         "ramnzys/filament-email-log": "^0.2.2",
         "ryangjchandler/filament-profile": "^0.2.1",
+        "saade/filament-fullcalendar": "^1.4",
         "savannabits/filament-flatpickr": "^1.0",
         "shuvroroy/filament-spatie-laravel-health": "^1.5",
         "spatie/cpu-load-health-check": "^1.0",
