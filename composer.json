@@ -6,18 +6,37 @@
     "license": "MIT",
     "require": {
         "php": "^8.1",
+        "3x1io/filament-menus": "^1.0",
+        "3x1io/filament-sitemap": "^1.0",
+        "3x1io/filament-themes": "^1.0",
+        "3x1io/filament-user": "^1.1",
+        "bezhansalleh/filament-addons": "^1.0",
+        "bezhansalleh/filament-language-switch": "^1.0",
+        "bezhansalleh/filament-shield": "^2.2",
         "filament/filament": "^2.0",
         "filament/forms": "^2.16",
         "filament/notifications": "^2.16",
         "filament/spatie-laravel-settings-plugin": "^2.16",
         "filament/spatie-laravel-tags-plugin": "^2.0",
-        "filament/spatie-laravel-translatable-plugin": "^2.0",
         "filament/tables": "^2.16",
+        "filipfonal/filament-log-manager": "^1.0",
         "guzzlehttp/guzzle": "^7.2",
+        "jeffgreco13/filament-breezy": "^1.4",
+        "jonquihote/filament-static-chart-widgets": "^1.0",
         "laravel/framework": "^9.19",
         "laravel/sanctum": "^3.0",
         "laravel/tinker": "^2.7",
-        "spatie/ray": "^1.34"
+        "ralphjsmit/laravel-filament-components": "^1.1",
+        "ramnzys/filament-email-log": "^0.2.2",
+        "ryangjchandler/filament-profile": "^0.2.1",
+        "savannabits/filament-flatpickr": "^1.0",
+        "shuvroroy/filament-spatie-laravel-health": "^1.5",
+        "spatie/cpu-load-health-check": "^1.0",
+        "spatie/laravel-sitemap": "^6.2",
+        "spatie/ray": "^1.34",
+        "stijnvanouplines/blade-country-flags": "^1.0",
+        "wychoong/filament-fortify": "^0.3.1",
+        "yepsua/filament-rating-field": "^0.1.0"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",
@@ -37,7 +56,8 @@
         "psr-4": {
             "App\\": "app/",
             "Database\\Factories\\": "database/factories/",
-            "Database\\Seeders\\": "database/seeders/"
+            "Database\\Seeders\\": "database/seeders/",
+            "Themes\\": "resources/views/themes/"
         }
     },
     "autoload-dev": {
@@ -59,7 +79,7 @@
         ],
         "post-create-project-cmd": [
             "@php artisan key:generate --ansi",
-	    "@php artisan make:filament-user"
+	        "@php artisan make:filament-user"
         ]
     },
     "extra": {

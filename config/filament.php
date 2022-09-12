@@ -87,7 +87,8 @@ return [
     'auth' => [
         'guard' => env('FILAMENT_AUTH_GUARD', 'web'),
         'pages' => [
-            'login' => \Filament\Http\Livewire\Auth\Login::class,
+            //'login' => \Filament\Http\Livewire\Auth\Login::class,
+            'login' => JeffGreco13\FilamentBreezy\Http\Livewire\Auth\Login::class,
         ],
     ],
 
@@ -169,7 +170,7 @@ return [
     |
     */
 
-    'dark_mode' => false,
+    'dark_mode' => true,
 
     /*
     |--------------------------------------------------------------------------
@@ -239,12 +240,27 @@ return [
             'should_show_logo' => true,
         ],
         'max_content_width' => null,
+        /*
+        * Through these settings, you can override the following (empty string values have no effect)
+        * 1) The menu group the item is placed under
+        * 2) The icon used for the menu item
+        * 3) Hide the menu item by setting "display" to false
+        * NOTE: for a multilingual site, you will need multiple entries per menu item as
+        * array key is the label of the menu item (which will change for different locales)
+        */
+        'menuItemsOverride' => [
+            'Application Health' => [
+                'group'   => 'System',
+                'icon'    => '',
+                'display' => true,
+            ]
+        ],
         'notifications' => [
             'vertical_alignment' => 'top',
             'alignment' => 'right',
         ],
         'sidebar' => [
-            'is_collapsible_on_desktop' => false,
+            'is_collapsible_on_desktop' => true,
             'groups' => [
                 'are_collapsible' => true,
             ],
