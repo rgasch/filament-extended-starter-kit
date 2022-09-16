@@ -37,7 +37,9 @@ class FilamentServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->configureAdminMenu();
+        if (config('filament-extended-starter-kit.useCustomMenuGenerator')) {
+            $this->configureAdminMenu();
+        }
         $this->configureHealthCheck();
     }
 
