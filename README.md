@@ -9,11 +9,10 @@ of basic utilities and goodies pre-installed.
 composer create-project --prefer-dist rgasch/filament-extended-starter-kit FilamentStarterKit
 ```
 
-Install dependencies
+Configure database access. 
 
-```bash
-composer update
-```
+1. Edit .env
+2. Set your database access parameters
 
 Then run migrations
 
