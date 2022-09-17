@@ -9,25 +9,34 @@ of basic utilities and goodies pre-installed.
 composer create-project --prefer-dist rgasch/filament-extended-starter-kit FilamentStarterKit
 ```
 
-Configure database access. 
+Install dependencies
 
-1. Edit .env
-2. Set your database access parameters
+```bash
+composer update
+```
 
-Then run migrations
+Run migrations
 
 ```bash
 php artisan migrate
 ```
 
-Then create the first/admin user:
+Create the first/admin user:
 
 ```
 php artisan make:filament-user
 ```
 
+Init FilamentShield
+
+```
+php artisan shield:install
+```
+
+For the FilamentShield install, answer "yes" to all questions it asks.
+
 In theory, that should be it. You can now go to /admin on your site and you should see the filament 
-login screen. 
+login screen. Log in with the user you created in step #4 above. 
 
 
 ## Installed Plugins
