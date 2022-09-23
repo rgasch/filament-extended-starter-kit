@@ -22,6 +22,7 @@
         "filipfonal/filament-log-manager": "^1.0",
         "flowframe/laravel-trend": "^0.1.1",
         "guzzlehttp/guzzle": "^7.2",
+        "hollyit/filament-static-assets": "^0.1.2",
         "jeffgreco13/filament-breezy": "^1.4",
         "jonquihote/filament-static-chart-widgets": "^1.0",
         "laravel/framework": "^9.19",
