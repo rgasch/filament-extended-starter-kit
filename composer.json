@@ -10,6 +10,7 @@
         "3x1io/filament-sitemap": "^1.0",
         "3x1io/filament-themes": "^1.0",
         "3x1io/filament-user": "^1.1",
+        "awcodes/filament-gravatar": "^1.0",
         "bezhansalleh/filament-addons": "^1.0",
         "bezhansalleh/filament-language-switch": "^1.0",
         "bezhansalleh/filament-shield": "^2.2",
