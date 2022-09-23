@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d65b44435f04b316815a9d38da5e97e1",
+    "content-hash": "49b73fe91c9cb2df54d419f4bea8dccc",
     "packages": [
         {
             "name": "3x1io/filament-menus",
@@ -314,6 +314,64 @@
                 "source": "https://github.com/akaunting/laravel-money/tree/3.1.2"
             },
             "time": "2022-07-27T08:16:36+00:00"
+        },
+        {
+            "name": "awcodes/filament-gravatar",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/awcodes/filament-gravatar.git",
+                "reference": "4c9a8146d5c48a06bf0219b16decd450f4d807d9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/awcodes/filament-gravatar/zipball/4c9a8146d5c48a06bf0219b16decd450f4d807d9",
+                "reference": "4c9a8146d5c48a06bf0219b16decd450f4d807d9",
+                "shasum": ""
+            },
+            "require": {
+                "filament/filament": "^2.0",
+                "php": "^8.0.2",
+                "spatie/laravel-package-tools": "^1.9.2"
+            },
+            "type": "package",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "FilamentGravatar\\FilamentGravatarServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "FilamentGravatar\\": "src/",
+                    "FilamentGravatar\\Database\\Seeders\\": "database/seeders/",
+                    "FilamentGravatar\\Database\\Factories\\": "database/factories/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Adam Weston",
+                    "email": "awcodes1@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Replace Filament's default avatar url provider with one for Gravatar.",
+            "keywords": [
+                "filament",
+                "framework",
+                "gravatar",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/awcodes/filament-gravatar/issues",
+                "source": "https://github.com/awcodes/filament-gravatar/tree/v1.0.0"
+            },
+            "time": "2022-07-11T16:49:47+00:00"
         },
         {
             "name": "bacon/bacon-qr-code",
@@ -2113,6 +2171,80 @@
             "time": "2022-08-27T01:00:31+00:00"
         },
         {
+            "name": "flowframe/laravel-trend",
+            "version": "v0.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Flowframe/laravel-trend.git",
+                "reference": "10f80dad8225caca58d286b580ebd27c2a0bf3fa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Flowframe/laravel-trend/zipball/10f80dad8225caca58d286b580ebd27c2a0bf3fa",
+                "reference": "10f80dad8225caca58d286b580ebd27c2a0bf3fa",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "^8.37|^9",
+                "php": "^8.0",
+                "spatie/laravel-package-tools": "^1.4.3"
+            },
+            "require-dev": {
+                "nunomaduro/collision": "^5.3|^6.1",
+                "orchestra/testbench": "^6.15|^7.0",
+                "pestphp/pest": "^1.18",
+                "pestphp/pest-plugin-laravel": "^1.1",
+                "spatie/laravel-ray": "^1.23",
+                "vimeo/psalm": "^4.8"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Flowframe\\Trend\\TrendServiceProvider"
+                    ],
+                    "aliases": {
+                        "Trend": "Flowframe\\Trend\\TrendFacade"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Flowframe\\Trend\\": "src",
+                    "Flowframe\\Trend\\Database\\Factories\\": "database/factories"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Lars Klopstra",
+                    "email": "lars@flowframe.nl",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Easily generate model trends",
+            "homepage": "https://github.com/flowframe/laravel-trend",
+            "keywords": [
+                "Flowframe",
+                "laravel",
+                "laravel-trend"
+            ],
+            "support": {
+                "issues": "https://github.com/Flowframe/laravel-trend/issues",
+                "source": "https://github.com/Flowframe/laravel-trend/tree/v0.1.1"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/larsklopstra",
+                    "type": "github"
+                }
+            ],
+            "time": "2022-02-25T13:52:24+00:00"
+        },
+        {
             "name": "fruitcake/php-cors",
             "version": "v1.2.0",
             "source": {
@@ -2575,6 +2707,68 @@
                 }
             ],
             "time": "2022-08-28T14:45:39+00:00"
+        },
+        {
+            "name": "hollyit/filament-static-assets",
+            "version": "0.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/HollyIT/filament-static-assets.git",
+                "reference": "1e5b5c26c581f4ee0f8d5d0d180db410392c82b8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/HollyIT/filament-static-assets/zipball/1e5b5c26c581f4ee0f8d5d0d180db410392c82b8",
+                "reference": "1e5b5c26c581f4ee0f8d5d0d180db410392c82b8",
+                "shasum": ""
+            },
+            "require": {
+                "filament/filament": "^2.13",
+                "illuminate/contracts": "^9.0",
+                "php": "^8.0",
+                "spatie/laravel-package-tools": "^1.9.2"
+            },
+            "require-dev": {
+                "orchestra/testbench": "7.*",
+                "pestphp/pest": "^1.21"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "HollyIT\\FilamentStaticAssets\\StaticAssetsServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "HollyIT\\FilamentStaticAssets\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jamie Holly",
+                    "email": "jamie@hollyit.net"
+                }
+            ],
+            "description": "Improved handling of stylesheets and javascript files for Filament",
+            "homepage": "https://github.com/HollyIT/filament-static-assets",
+            "keywords": [
+                "assets",
+                "filament",
+                "hollyit",
+                "laravel",
+                "performance"
+            ],
+            "support": {
+                "issues": "https://github.com/HollyIT/filament-static-assets/issues",
+                "source": "https://github.com/HollyIT/filament-static-assets/tree/0.1.2"
+            },
+            "time": "2022-09-10T17:02:14+00:00"
         },
         {
             "name": "intervention/image",
@@ -5262,6 +5456,62 @@
             "time": "2022-07-28T14:25:11+00:00"
         },
         {
+            "name": "pxlrbt/filament-environment-indicator",
+            "version": "v0.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pxlrbt/filament-environment-indicator.git",
+                "reference": "e72790d7062d48c652290261613c99e0778989e8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pxlrbt/filament-environment-indicator/zipball/e72790d7062d48c652290261613c99e0778989e8",
+                "reference": "e72790d7062d48c652290261613c99e0778989e8",
+                "shasum": ""
+            },
+            "require": {
+                "filament/filament": "^2.9.15",
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^3.6"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "\\pxlrbt\\FilamentEnvironmentIndicator\\FilamentEnvironmentIndicatorServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "pxlrbt\\FilamentEnvironmentIndicator\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dennis Koch",
+                    "email": "info@pixelarbeit.de"
+                }
+            ],
+            "description": "Indicator for the current environment inside Filament",
+            "keywords": [
+                "environment indicator",
+                "filament",
+                "laravel-filament"
+            ],
+            "support": {
+                "issues": "https://github.com/pxlrbt/filament-environment-indicator/issues",
+                "source": "https://github.com/pxlrbt/filament-environment-indicator/tree/v0.2.0"
+            },
+            "time": "2022-08-02T13:45:04+00:00"
+        },
+        {
             "name": "ralouphie/getallheaders",
             "version": "3.0.3",
             "source": {
@@ -5377,6 +5627,76 @@
                 "source": "https://github.com/ralphjsmit/laravel-filament-components/tree/1.1.0"
             },
             "time": "2022-03-22T17:37:59+00:00"
+        },
+        {
+            "name": "ralphjsmit/tall-interactive",
+            "version": "0.8.12",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ralphjsmit/tall-interactive.git",
+                "reference": "efff6c58aef8370e145c4d7623c6b38ba5a1a007"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ralphjsmit/tall-interactive/zipball/efff6c58aef8370e145c4d7623c6b38ba5a1a007",
+                "reference": "efff6c58aef8370e145c4d7623c6b38ba5a1a007",
+                "shasum": ""
+            },
+            "require": {
+                "filament/forms": "^2.8",
+                "illuminate/contracts": "^8.73|^9.0",
+                "livewire/livewire": "^2.8",
+                "php": "^8.0",
+                "ryangjchandler/blade-tabler-icons": "^1.1",
+                "spatie/laravel-package-tools": "^1.9.2"
+            },
+            "require-dev": {
+                "nunomaduro/collision": "^5.10|^6.0",
+                "nunomaduro/larastan": "^1.0",
+                "orchestra/testbench": "^6.22|^7.0",
+                "pestphp/pest": "^1.21",
+                "pestphp/pest-plugin-laravel": "^1.1",
+                "phpstan/extension-installer": "^1.1",
+                "phpunit/phpunit": "^9.5",
+                "spatie/invade": "^1.0",
+                "spatie/laravel-ray": "^1.27"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "RalphJSmit\\Tall\\Interactive\\ActionablesServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "RalphJSmit\\Tall\\Interactive\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ralph J. Smit",
+                    "email": "rjs@ralphjsmit.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Create forms, modals and slide-overs with ease.",
+            "homepage": "https://github.com/ralphjsmit/tall-interactive",
+            "keywords": [
+                "laravel",
+                "ralphjsmit",
+                "tall-interactive"
+            ],
+            "support": {
+                "issues": "https://github.com/ralphjsmit/tall-interactive/issues",
+                "source": "https://github.com/ralphjsmit/tall-interactive/tree/0.8.12"
+            },
+            "time": "2022-09-09T16:25:37+00:00"
         },
         {
             "name": "ramnzys/filament-email-log",
@@ -5705,6 +6025,68 @@
                 }
             ],
             "time": "2022-09-02T11:04:28+00:00"
+        },
+        {
+            "name": "ryangjchandler/blade-tabler-icons",
+            "version": "v1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ryangjchandler/blade-tabler-icons.git",
+                "reference": "65bab6bd1abd605dee8f96a6a9670f27e3f515a2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ryangjchandler/blade-tabler-icons/zipball/65bab6bd1abd605dee8f96a6a9670f27e3f515a2",
+                "reference": "65bab6bd1abd605dee8f96a6a9670f27e3f515a2",
+                "shasum": ""
+            },
+            "require": {
+                "blade-ui-kit/blade-icons": "^1.0",
+                "illuminate/support": "^9.0",
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^3.0",
+                "orchestra/testbench": "^7.0",
+                "phpunit/phpunit": "^9.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "RyanChandler\\TablerIcons\\BladeTablerIconsServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "RyanChandler\\TablerIcons\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ryan Chandler",
+                    "email": "support@ryangjchandler.co.uk",
+                    "homepage": "https://ryangjchandler.co.uk",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A package to easily make use of Tabler icons in your Laravel Blade views.",
+            "homepage": "https://github.com/ryangjchandler/blade-tabler-icons",
+            "keywords": [
+                "blade",
+                "laravel",
+                "tabler"
+            ],
+            "support": {
+                "issues": "https://github.com/ryangjchandler/blade-tabler-icons/issues",
+                "source": "https://github.com/ryangjchandler/blade-tabler-icons/tree/v1.4.0"
+            },
+            "time": "2022-08-23T12:50:29+00:00"
         },
         {
             "name": "ryangjchandler/filament-profile",
