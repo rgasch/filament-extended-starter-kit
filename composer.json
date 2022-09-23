@@ -31,6 +31,7 @@
         "laravel/tinker": "^2.7",
         "pxlrbt/filament-environment-indicator": "^0.2.0",
         "ralphjsmit/laravel-filament-components": "^1.1",
+        "ralphjsmit/tall-interactive": "^0.8.12",
         "ramnzys/filament-email-log": "^0.2.2",
         "ryangjchandler/filament-profile": "^0.2.1",
         "saade/filament-fullcalendar": "^1.4",
