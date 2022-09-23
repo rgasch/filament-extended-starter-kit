@@ -28,6 +28,7 @@
         "laravel/framework": "^9.19",
         "laravel/sanctum": "^3.0",
         "laravel/tinker": "^2.7",
+        "pxlrbt/filament-environment-indicator": "^0.2.0",
         "ralphjsmit/laravel-filament-components": "^1.1",
         "ramnzys/filament-email-log": "^0.2.2",
         "ryangjchandler/filament-profile": "^0.2.1",
