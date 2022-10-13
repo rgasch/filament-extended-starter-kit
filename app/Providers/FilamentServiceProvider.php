@@ -75,23 +75,27 @@ class FilamentServiceProvider extends ServiceProvider
                                 ->url(route('filament.pages.health-check-results'))
                                 ->icon('heroicon-o-heart')
                                 ->sort(1),
+                            NavigationItem::make('Feature Flags')
+                                ->url('/admin/feature-flags')
+                                ->icon('heroicon-o-flag')
+                                ->sort(2),
                             NavigationItem::make('Log Files')
                                 ->url(route('filament.pages.logs'))
                                 ->icon(config('filament-log-manager.navigation_icon'))
-                                ->sort(2),
+                                ->sort(3),
                             NavigationItem::make('Menus')
                                 //->url(route('filament.pages.menus'))
                                 ->url('/admin/menus')
                                 ->icon('heroicon-o-menu')
-                                ->sort(3),
+                                ->sort(4),
                             NavigationItem::make('Sent Emails')
                                 ->url('/admin/emails')
                                 ->icon('heroicon-o-mail')
-                                ->sort(4),
+                                ->sort(5),
                             NavigationItem::make('Site Settings')
                                 ->url('/admin/site-settings')
                                 ->icon('heroicon-o-cog')
-                                ->sort(4),
+                                ->sort(6),
                         ]),
                 ]);
         });

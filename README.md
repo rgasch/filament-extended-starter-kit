@@ -46,6 +46,7 @@ login screen. Log in with the user you created in step #4 above.
 - [Components](https://filamentphp.com/plugins/ralphjsmit-components)
 - [EmailLog](https://filamentphp.com/plugins/email-log)
 - [EnvironmentIndicator](https://filamentphp.com/plugins/environment-indicator)
+- [FeatureFlags](https://filamentphp.com/plugins/feature-flags)
 - [Flatpickr](https://filamentphp.com/plugins/flatpickr)
 - [Flowframe](https://docs.flowfra.me/docs/laravel-trend)
 - [FormBuilder](https://filamentphp.com/docs/2.x/forms/installation)
@@ -60,6 +61,7 @@ login screen. Log in with the user you created in step #4 above.
 - [RatingField](https://filamentphp.com/plugins/rating-field)
 - [Sitemap](https://filamentphp.com/plugins/sitemap)
 - [SpatieHealth](https://filamentphp.com/plugins/spatie-health)
+- [SpatieMarkdownEditor](https://filamentphp.com/plugins/spatie-markdown-editor)
 - [SpatieSettings](https://filamentphp.com/plugins/spatie-settings)
 - [SpatieTags](https://filamentphp.com/plugins/spatie-tags)
 - [StaticAssets](https://filamentphp.com/plugins/static-asset-handler)
@@ -69,7 +71,7 @@ login screen. Log in with the user you created in step #4 above.
 - [Themes](https://filamentphp.com/plugins/3x1io-themes)
 - [User](https://filamentphp.com/plugins/user-manager)
 
-All relevant migrations, assets and config files have been published to the main Laravel 
+All relevant migrations, views and config files have been published to the main Laravel 
 directory tree to the locations where you would expect them. If a package (such as, for 
 exmaple, the Spatie packages) is based upon another package, the base package 
 migrations and config files have been published as well. 
@@ -87,3 +89,10 @@ functionality (which will enable the default Filament menu generation) by
 setting the *useCustomMenuGenerator* config option to *false* in the 
 /config/filament-extended-starter-kit.php config file.
 
+## HealthCheck
+
+The health checks are also defined and configued in the 
+App\Providers\FilamentServiceProvider class. The only variable which might 
+require tuning is the "nCpuCores" variable which is used to configure 
+CPU load and needs to know the number of CPU cores on you system in order 
+to make this calculation correct. 
