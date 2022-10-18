@@ -96,3 +96,8 @@ App\Providers\FilamentServiceProvider class. The only variable which might
 require tuning is the "nCpuCores" variable which is used to configure 
 CPU load and needs to know the number of CPU cores on you system in order 
 to make this calculation correct. 
+
+## Alternative 
+
+If you want a tweakable install script to produce a Filament instance for you, 
+check out [laravel-installer-script](https://github.com/rgasch/laravel-installer-script)
