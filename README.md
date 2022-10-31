@@ -6,7 +6,7 @@ of basic utilities and goodies pre-installed.
 ## New Installation
 
 ```bash
-composer create-project --prefer-dist rgasch/filament-extended-starter-kit FilamentStarterKit
+composer create-project --prefer-dist Rgasch/filament-extended-starter-kit FilamentStarterKit
 ```
 
 Install dependencies
@@ -53,6 +53,7 @@ login screen. Log in with the user you created in step #4 above.
 - [Fortify](https://filamentphp.com/plugins/fortify)
 - [FullCalendar](https://filamentphp.com/plugins/filament-fullcalendar)
 - [Gravatar](https://filamentphp.com/plugins/gravatar)
+- [Google reCaptcha Field](https://filamentphp.com/plugins/google-recaptcha-field)
 - [LanguageSwitch](https://filamentphp.com/plugins/language-switch)
 - [LogManager](https://filamentphp.com/plugins/log-manager)
 - [Menus](https://filamentphp.com/plugins/menus)
@@ -68,6 +69,7 @@ login screen. Log in with the user you created in step #4 above.
 - [StaticChartWidgets](https://filamentphp.com/plugins/static-chart-widgets)
 - [TableBuilder](https://filamentphp.com/docs/tables)
 - [TallInteractive](https://filamentphp.com/plugins/tall-interactive)
+- [ThemeColorSwitcher](https://filamentphp.com/plugins/theme-color-switcher)
 - [Themes](https://filamentphp.com/plugins/3x1io-themes)
 - [User](https://filamentphp.com/plugins/user-manager)
 
