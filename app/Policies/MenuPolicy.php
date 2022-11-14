@@ -37,7 +37,6 @@ class MenuPolicy
      * Determine whether the user can create models.
      *
      * @param  \App\Models\User  $user
-     * @param  \io3x1\FilamentMenus\Models\Menu  $menu
      * @return \Illuminate\Auth\Access\Response|bool
      */
     public function create(User $user)
