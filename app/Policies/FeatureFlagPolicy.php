@@ -3,10 +3,10 @@
 namespace App\Policies;
 
 use App\Models\User;
-use Spatie\Permission\Models\Role;
+use RyanChandler\LaravelFeatureFlags\Models\FeatureFlag;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
-class RolePolicy
+class FeatureFlagPolicy
 {
     use HandlesAuthorization;
 
@@ -18,19 +18,19 @@ class RolePolicy
      */
     public function viewAny(User $user)
     {
-        return $user->can('view_any_role');
+        return $user->can('view_any_feature::flag');
     }
 
     /**
      * Determine whether the user can view the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \Spatie\Permission\Models\Role  $role
+     * @param  \RyanChandler\LaravelFeatureFlags\Models\FeatureFlag  $featureFlag
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function view(User $user, Role $role)
+    public function view(User $user, FeatureFlag $featureFlag)
     {
-        return $user->can('view_role');
+        return $user->can('view_feature::flag');
     }
 
     /**
@@ -41,31 +41,31 @@ class RolePolicy
      */
     public function create(User $user)
     {
-        return $user->can('create_role');
+        return $user->can('create_feature::flag');
     }
 
     /**
      * Determine whether the user can update the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \Spatie\Permission\Models\Role  $role
+     * @param  \RyanChandler\LaravelFeatureFlags\Models\FeatureFlag  $featureFlag
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function update(User $user, Role $role)
+    public function update(User $user, FeatureFlag $featureFlag)
     {
-        return $user->can('update_role');
+        return $user->can('update_feature::flag');
     }
 
     /**
      * Determine whether the user can delete the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \Spatie\Permission\Models\Role  $role
+     * @param  \RyanChandler\LaravelFeatureFlags\Models\FeatureFlag  $featureFlag
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function delete(User $user, Role $role)
+    public function delete(User $user, FeatureFlag $featureFlag)
     {
-        return $user->can('delete_role');
+        return $user->can('delete_feature::flag');
     }
 
     /**
@@ -76,19 +76,19 @@ class RolePolicy
      */
     public function deleteAny(User $user)
     {
-        return $user->can('delete_any_role');
+        return $user->can('delete_any_feature::flag');
     }
 
     /**
      * Determine whether the user can permanently delete.
      *
      * @param  \App\Models\User  $user
-     * @param  \Spatie\Permission\Models\Role  $role
+     * @param  \RyanChandler\LaravelFeatureFlags\Models\FeatureFlag  $featureFlag
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function forceDelete(User $user, Role $role)
+    public function forceDelete(User $user, FeatureFlag $featureFlag)
     {
-        return $user->can('force_delete_role');
+        return $user->can('force_delete_feature::flag');
     }
 
     /**
@@ -99,19 +99,19 @@ class RolePolicy
      */
     public function forceDeleteAny(User $user)
     {
-        return $user->can('force_delete_any_role');
+        return $user->can('force_delete_any_feature::flag');
     }
 
     /**
      * Determine whether the user can restore.
      *
      * @param  \App\Models\User  $user
-     * @param  \Spatie\Permission\Models\Role  $role
+     * @param  \RyanChandler\LaravelFeatureFlags\Models\FeatureFlag  $featureFlag
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function restore(User $user, Role $role)
+    public function restore(User $user, FeatureFlag $featureFlag)
     {
-        return $user->can('restore_role');
+        return $user->can('restore_feature::flag');
     }
 
     /**
@@ -122,19 +122,19 @@ class RolePolicy
      */
     public function restoreAny(User $user)
     {
-        return $user->can('restore_any_role');
+        return $user->can('restore_any_feature::flag');
     }
 
     /**
      * Determine whether the user can bulk restore.
      *
      * @param  \App\Models\User  $user
-     * @param  \Spatie\Permission\Models\Role  $role
+     * @param  \RyanChandler\LaravelFeatureFlags\Models\FeatureFlag  $featureFlag
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function replicate(User $user, Role $role)
+    public function replicate(User $user, FeatureFlag $featureFlag)
     {
-        return $user->can('replicate_role');
+        return $user->can('replicate_feature::flag');
     }
 
     /**
@@ -145,7 +145,7 @@ class RolePolicy
      */
     public function reorder(User $user)
     {
-        return $user->can('reorder_role');
+        return $user->can('reorder_feature::flag');
     }
 
 }
