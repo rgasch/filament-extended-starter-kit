@@ -98,3 +98,12 @@ App\Providers\FilamentServiceProvider class. The only variable which might
 require tuning is the "nCpuCores" variable which is used to configure 
 CPU load and needs to know the number of CPU cores on you system in order 
 to make this calculation correct. 
+
+## Performance
+
+Some people have reported slow page loading speeds. In response to this I've
+added a .htaccess file which defines caching directives which already helps 
+quite a bit. If after this optimization you are still unhappy with your loading 
+speeds, try removing the *"ralphjsmit/tall-interactive"* package from your 
+composer.json file and then run "composer update" (this of course assumes that 
+you are not using the functionality in this package). 
