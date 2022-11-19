@@ -99,6 +99,14 @@ require tuning is the "nCpuCores" variable which is used to configure
 CPU load and needs to know the number of CPU cores on you system in order 
 to make this calculation correct. 
 
+## ThemeColors
+
+The filament-theme-color-switcher package allows you to easily switch 
+theme colors. The starter pack contains a *theme-colors* array in the 
+*config/filament-extended-starter-kit.php* config file which allows you 
+to set colors either there directly or by setting *FILAMENT_PRIMARY_COLOR*
+and *FILAMENT_SECONDARY_COLOR* in your *.env* file.
+
 ## Performance
 
 Some people have reported slow page loading speeds. In response to this I've
