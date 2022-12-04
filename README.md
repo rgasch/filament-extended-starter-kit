@@ -115,3 +115,9 @@ quite a bit. If after this optimization you are still unhappy with your loading
 speeds, try removing the *"ralphjsmit/tall-interactive"* package from your 
 composer.json file and then run "composer update" (this of course assumes that 
 you are not using the functionality in this package). 
+
+
+## Alternative 
+
+If you want a tweakable install script to produce a Filament instance for you, 
+check out [laravel-installer-script](https://github.com/rgasch/laravel-installer-script)
