@@ -88,7 +88,7 @@ class RolePolicy
      */
     public function forceDelete(User $user, Role $role)
     {
-        return $user->can('force_delete_role');
+        return $user->can('{{ ForceDelete }}');
     }
 
     /**
@@ -99,7 +99,7 @@ class RolePolicy
      */
     public function forceDeleteAny(User $user)
     {
-        return $user->can('force_delete_any_role');
+        return $user->can('{{ ForceDeleteAny }}');
     }
 
     /**
@@ -111,7 +111,7 @@ class RolePolicy
      */
     public function restore(User $user, Role $role)
     {
-        return $user->can('restore_role');
+        return $user->can('{{ Restore }}');
     }
 
     /**
@@ -122,11 +122,11 @@ class RolePolicy
      */
     public function restoreAny(User $user)
     {
-        return $user->can('restore_any_role');
+        return $user->can('{{ RestoreAny }}');
     }
 
     /**
-     * Determine whether the user can bulk restore.
+     * Determine whether the user can replicate.
      *
      * @param  \App\Models\User  $user
      * @param  \Spatie\Permission\Models\Role  $role
@@ -134,7 +134,7 @@ class RolePolicy
      */
     public function replicate(User $user, Role $role)
     {
-        return $user->can('replicate_role');
+        return $user->can('{{ Replicate }}');
     }
 
     /**
@@ -145,7 +145,7 @@ class RolePolicy
      */
     public function reorder(User $user)
     {
-        return $user->can('reorder_role');
+        return $user->can('{{ Reorder }}');
     }
 
 }

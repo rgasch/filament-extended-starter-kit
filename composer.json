@@ -14,7 +14,7 @@
         "awcodes/filament-gravatar": "^1.0",
         "bezhansalleh/filament-addons": "^1.0",
         "bezhansalleh/filament-language-switch": "^1.0",
-        "bezhansalleh/filament-shield": "^2.2",
+        "bezhansalleh/filament-shield": "^2.3.2",
         "filament/filament": "^2.16.31",
         "filament/forms": "^2.16",
         "filament/notifications": "^2.16",
